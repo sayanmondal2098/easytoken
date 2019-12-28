@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: tokenizer
+Version: 1.0
+Summary: With s-atmech you can implement attention mechanism(RNN Layer) as a python library for Natural Language Processing Models/Problems.
+Home-page: https://github.com/Samsomyajit/s-atmech
+Author: Sayan Mondal
+Author-email: sayanmondal2098@gmail.com
+License: MIT
+Download-URL: https://github.com/Samsomyajit/s-atmech/archive/ver1.0.1.tar.gz
+Description: Tokenizer is an independent Open Source, Natural Language Processing python library which implements a tokenizer to create token from Both Sentence and Paragraph.
+Keywords: NLP', 'Natural Language Processing', 'Tokenization', 'Text Summarization', 'Text Processing', 'Sentiment Analysis'
+Platform: ALL
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+© 2019 GitHub, Inc.
