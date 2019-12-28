@@ -6,7 +6,7 @@ Home-page: https://github.com/sayanmondal2098/easytoken
 Author: Sayan MOndal(ph3n1x)
 Author-email: sayanmondal2098@gmail.com
 License: MIT
-Download-URL: https://github.com/sayanmondal2098/easytoken
+Download-URL: https://github.com/sayanmondal2098/easytoken/blob/master/dist/easytoken-1.0.1.tar.gz
 Description: easytoken is an independent Open Source, Natural Language Processing python library which implements a easytoken to create token from Both Sentence and Paragraph.
 Keywords: NLP,Natural Language Processing,Tokenization,Text Summarization,Text Processing,Sentiment Analysis
 Platform: UNKNOWN
