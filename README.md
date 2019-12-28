@@ -22,7 +22,7 @@ $ python3 get-pip.py
 ```
 Install via pip:
 ```
-$ pip install s-atmech
+$ pip install easytoken
 ```
 For upgrade:
 ```
