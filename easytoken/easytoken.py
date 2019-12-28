@@ -38,8 +38,8 @@ def lowerstrip(s, all=False):
     return strip_punchuation(s.lower().strip(), all=all)
 
 
-class WordTokenizer():
-    """NLTK's recommended word tokenizer (currently the TreeBankTokenizer).
+class Wordeasytoken():
+    """NLTK's recommended word easytoken (currently the TreeBankeasytoken).
     Uses regular expressions to tokenize text. Assumes text has already been
     segmented into sentences.
     Performs the following steps:
@@ -66,8 +66,8 @@ class WordTokenizer():
                     for word in tokens if strip_punchuation(word, all=False)]
 
 
-class SentenceTokenizer():
-    """NLTK's sentence tokenizer (currently PunktSentenceTokenizer).
+class Sentenceeasytoken():
+    """NLTK's sentence easytoken (currently PunktSentenceeasytoken).
     Uses an unsupervised algorithm to build a model for abbreviation words,
     collocations, and words that start sentences,
     then uses that to find sentence boundaries.
@@ -87,18 +87,18 @@ class SentenceTokenizer():
 
 
 #: Convenience function for tokenizing sentences
-sent_tokenize = SentenceTokenizer().itokenize
+sent_tokenize = Sentenceeasytoken().itokenize
 
-_word_tokenizer = WordTokenizer()  # Singleton word tokenizer
+_word_easytoken = Wordeasytoken()  # Singleton word easytoken
 
 
 def word_tokenize(text, include_punc=True, *args, **kwargs):
     """Convenience function for tokenizing text into words.
-    NOTE: NLTK's word tokenizer expects sentences as input, so the text will be
+    NOTE: NLTK's word easytoken expects sentences as input, so the text will be
     tokenized to sentences before being tokenized to words.
     """
     words = chain.from_iterable(
-        _word_tokenizer.itokenize(sentence, include_punc=include_punc,
+        _word_easytoken.itokenize(sentence, include_punc=include_punc,
                                   *args, **kwargs)
         for sentence in sent_tokenize(text))
     return words
@@ -106,4 +106,4 @@ def word_tokenize(text, include_punc=True, *args, **kwargs):
 
 
 if __name__ == "__main__":
-    print(WordTokenizer.tokenize(WordTokenizer,text="I am a good boy"))
+    print(Wordeasytoken.tokenize(Wordeasytoken,text="I am a good boy"))

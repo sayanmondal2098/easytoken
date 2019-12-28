@@ -1,11 +1,11 @@
-# tokenizer
+# easytoken
 
  <p align="center">
   <img  src="https://avatars2.githubusercontent.com/u/41796338?s=400&u=8e061e2a5ea45b7f634617e585726008c5176314&v=4">
 </p>
 
-# tokenizer
-Tokenizer is an independent Open Source, Natural Language Processing python library which implements a tokenizer to create token from Both Sentence and Paragraph.<br>
+# easytoken
+easytoken is an independent Open Source, Natural Language Processing python library which implements a easytoken to create token from Both Sentence and Paragraph.<br>
 <br>
 
 # Next in Line:
@@ -15,7 +15,7 @@ This is still in alpha stage so we are planning to add few more feature as taggi
 The name is just it's purpose \_(^_^)_/
 
 # Installation and Implementation:
-To install tokenizer follow the steps:<br>
+To install easytoken follow the steps:<br>
 Install pip:
 ```
 $ python3 get-pip.py
@@ -26,12 +26,12 @@ $ pip install s-atmech
 ```
 For upgrade:
 ```
-$ pip install --upgrade tokenizer
+$ pip install --upgrade easytoken
 ```
 Implementation:
 ```python
->>> from Tokenizer.tokenizer import WordTokenizer
->>>WordTokenizer.tokenize(WordTokenizer,text="Hello all , I'll be a good lover for you.")
+>>> from easytoken.easytoken import Wordeasytoken
+>>>Wordeasytoken.tokenize(Wordeasytoken,text="Hello all , I'll be a good lover for you.")
 ```
   
 # Developer Info:

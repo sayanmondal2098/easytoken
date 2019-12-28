@@ -1,4 +1,4 @@
-import Tokenizer.tokenizer
-from Tokenizer.tokenizer import WordTokenizer
+import easytoken.easytoken
+from easytoken.easytoken import Wordeasytoken
 
-print(WordTokenizer.tokenize(WordTokenizer,text="Hello all , I'll fuck you."))
+print(Wordeasytoken.tokenize(Wordeasytoken,text="Hello all , I'll fuck you."))

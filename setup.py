@@ -1,15 +1,18 @@
+
+import setuptools
 from distutils.core import setup
+
 setup(
-  name = 'tokenizer',         
-  packages = ['tokenizer'],   
+  name = 'easytoken',         
+  packages = ['easytoken'],   
   version = '1.0.1',      
   license='MIT', 
-  long_description = 'Tokenizer is an independent Open Source, Natural Language Processing python library which implements a tokenizer to create token from Both Sentence and Paragraph.',
-  description = 'Tokenizer is an independent Open Source, Natural Language Processing python library which implements a tokenizer to create token from Both Sentence and Paragraph.',  
+  long_description = 'easytoken is an independent Open Source, Natural Language Processing python library which implements a easytoken to create token from Both Sentence and Paragraph.',
+  description = 'easytoken is an independent Open Source, Natural Language Processing python library which implements a easytoken to create token from Both Sentence and Paragraph.',  
   author = 'Sayan MOndal(ph3n1x)',               
   author_email = 'sayanmondal2098@gmail.com',     
-  url = 'https://github.com/sayanmondal2098/tokenizer',   
-  download_url = 'https://github.com/sayanmondal2098/tokenizer',   
+  url = 'https://github.com/sayanmondal2098/easytoken',   
+  download_url = 'https://github.com/sayanmondal2098/easytoken',   
   keywords = ['NLP', 'Natural Language Processing', 'Tokenization', 'Text Summarization', 'Text Processing', 'Sentiment Analysis'],   # Keywords that define your package best
   install_requires=[         
           'nltk',
