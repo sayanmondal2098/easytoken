@@ -1,7 +1,7 @@
 # easytoken
 
  <p align="center">
-  <img  src="https://avatars2.githubusercontent.com/u/41796338?s=400&u=8e061e2a5ea45b7f634617e585726008c5176314&v=4">
+  <img  src="https://github.com/Bread-and-Code/easytoken/blob/master/Misc/Easytoken_logo.jpg">
 </p>
 
 # easytoken
