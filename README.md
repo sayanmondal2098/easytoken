@@ -33,7 +33,7 @@ After Download the module ,:
 ```
 $ python
 >>> import nltk
->>> nltk.download("All")
+>>> nltk.download("all")
 ```
 Implementation:
 ```python
