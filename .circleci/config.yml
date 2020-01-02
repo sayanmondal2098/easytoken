@@ -48,10 +48,6 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            python
-            import nltk
-            nltk.download("all")
-            exit
             python test.py
 
       - store_artifacts:
