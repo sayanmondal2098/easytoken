@@ -28,6 +28,13 @@ For upgrade:
 ```
 $ pip install --upgrade easytoken
 ```
+
+After Download the module ,:
+```
+$ python
+>>> import nltk
+>>> nltk.download("all")
+```
 Implementation:
 ```python
 >>> from easytoken.easytoken import Wordeasytoken
