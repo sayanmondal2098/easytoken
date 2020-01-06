@@ -1,5 +1,7 @@
 # easytoken
 [![Gitter](https://badges.gitter.im/BreadandCode/community.svg)](https://gitter.im/BreadandCode/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![CircleCI](https://circleci.com/gh/sayanmondal2098/easytoken.svg?style=svg)](https://circleci.com/gh/sayanmondal2098/easytoken)
+
 
  <p align="center">
   <img  src="./Misc/Easytoken_logo.jpg">
