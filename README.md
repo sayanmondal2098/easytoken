@@ -1,7 +1,8 @@
 # easytoken
+[![Gitter](https://badges.gitter.im/BreadandCode/community.svg)](https://gitter.im/BreadandCode/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
  <p align="center">
-  <img  src="https://avatars2.githubusercontent.com/u/41796338?s=400&u=8e061e2a5ea45b7f634617e585726008c5176314&v=4">
+  <img  src="./Misc/Easytoken_logo.jpg">
 </p>
 
 # easytoken
@@ -41,6 +42,12 @@ $ python3 -m pip install easytoken
 For upgrade:
 ```
 $ python3 -m pip install --upgrade easytoken
+
+After Download the module ,:
+```
+$ python
+>>> import nltk
+>>> nltk.download("all")
 ```
 Implementation:
 ```python
