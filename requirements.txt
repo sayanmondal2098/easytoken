@@ -1,2 +1,1 @@
-tensorflow
 nltk==3.0.0
