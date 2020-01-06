@@ -42,11 +42,11 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
-            python3 -m unittest discover
+            python3 -m unittest test
       - save_cache:
           paths:
             - ./venv
-          key: v1-dependencies-{{ checksum "requirements.txt" }}
+          key: v1-dependencies-{{ checksum "test.py" }}
           
   
   
@@ -55,5 +55,5 @@ workflows:
   build_and_test:
     jobs:
       - build
-      # - test
+      - test
       
