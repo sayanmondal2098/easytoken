@@ -41,8 +41,8 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-              pip install -r requirements.txt
-              python3 -m unittest test.py
+            pip install -r requirements.txt
+            python3 -m unittest test
       - save_cache:
           paths:
             - ./venv
@@ -55,5 +55,5 @@ workflows:
   build_and_test:
     jobs:
       - build
-      - test
+      # - test
       

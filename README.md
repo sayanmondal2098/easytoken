@@ -4,7 +4,7 @@
 
 
  <p align="center">
-  <img  src="./Misc/Easytoken_logo.jpg">
+  <img  src="https://bread-and-code.github.io/images/projects/easytoken.png">
 </p>
 
 # easytoken
