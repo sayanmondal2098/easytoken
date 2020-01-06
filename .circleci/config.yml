@@ -40,6 +40,7 @@ jobs:
           name: test
           command: |
             python3 -m venv venv
+            . venv/bin/activate
             python3 run -m unittest discover
       - save_cache:
           paths:
