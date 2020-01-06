@@ -1,3 +1,5 @@
+import nltk
+nltk.download('punkt')
 import easytoken.easytoken
 from easytoken.easytoken import Wordeasytoken
 
