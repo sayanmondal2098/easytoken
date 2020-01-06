@@ -17,9 +17,10 @@ The name is just it's purpose \_(^_^)_/
 
 # Installation and Implementation:
 To install easytoken follow the steps:<br>
+## Windows
 Install pip:
 ```
-$ python3 get-pip.py
+$ python get-pip.py
 ```
 Install via pip:
 ```
@@ -29,6 +30,18 @@ For upgrade:
 ```
 $ pip install --upgrade easytoken
 ```
+## Linux/Unix
+Install pip:
+```
+$ python3 get-pip.py
+```
+Install via pip:
+```
+$ python3 -m pip install easytoken
+```
+For upgrade:
+```
+$ python3 -m pip install --upgrade easytoken
 
 After Download the module ,:
 ```
