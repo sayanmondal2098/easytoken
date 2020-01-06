@@ -1,4 +1,4 @@
-Create a pull request / Proposed sollution and Team'll review it.
+Thanks for your contribution
 
 #### Name: Somyajit Chakraborty Sam
  - Place: Kolkata
