@@ -5,7 +5,7 @@ from distutils.core import setup
 setup(
   name = 'easytoken',         
   packages = ['easytoken'],   
-  version = '1.0.6',      
+  version = '1.0.7',      
   license='MIT', 
   long_description=open('README.md').read(),
   long_description_content_type='text/markdown',
@@ -19,7 +19,7 @@ setup(
           'nltk',
       ],
   classifiers=[
-    'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
+    'Development Status :: 5 - Production/Stable',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
     'Intended Audience :: Developers',      # Define that your audience are developers
     'Topic :: Software Development :: Build Tools',
     'License :: OSI Approved :: MIT License',# Again, pick a license
