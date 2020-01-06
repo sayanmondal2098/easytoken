@@ -42,7 +42,7 @@ $ python3 -m pip install easytoken
 For upgrade:
 ```
 $ python3 -m pip install --upgrade easytoken
-
+```
 After Download the module ,:
 ```
 $ python
