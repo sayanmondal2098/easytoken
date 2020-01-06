@@ -5,7 +5,7 @@ from distutils.core import setup
 setup(
   name = 'easytoken',         
   packages = ['easytoken'],   
-  version = '1.0.5',      
+  version = '1.0.6',      
   license='MIT', 
   long_description=open('README.md').read(),
   long_description_content_type='text/markdown',

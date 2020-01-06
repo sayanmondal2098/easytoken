@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: easytoken
-Version: 1.0.5
+Version: 1.0.6
 Summary: easytoken is an independent Open Source, Natural Language Processing python library which implements a easytoken to create token from Both Sentence and Paragraph.
 Home-page: https://github.com/sayanmondal2098/easytoken
 Author: Sayan Mondal(ph3n1x)
@@ -13,7 +13,7 @@ Description: # easytoken
         
         
          <p align="center">
-          <img  src="./Misc/Easytoken_logo.jpg">
+          <img  src="https://bread-and-code.github.io/images/projects/easytoken.png">
         </p>
         
         # easytoken
