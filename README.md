@@ -1,6 +1,8 @@
 # easytoken
 [![Gitter](https://badges.gitter.im/BreadandCode/community.svg)](https://gitter.im/BreadandCode/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+[![Gitter](https://badges.gitter.im/BreadandCode/community.svg)](https://gitter.im/BreadandCode/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
  <p align="center">
   <img  src="./Misc/Easytoken_logo.jpg">
 </p>
