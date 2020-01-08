@@ -1,8 +1,11 @@
 # easytoken
 [![Gitter](https://badges.gitter.im/BreadandCode/community.svg)](https://gitter.im/BreadandCode/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![CircleCI](https://circleci.com/gh/sayanmondal2098/easytoken.svg?style=svg)](https://circleci.com/gh/sayanmondal2098/easytoken)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/sayanmondal2098/easytoken/fork)
+[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
  <p align="center">
-  <img  src="./Misc/Easytoken_logo.jpg">
+  <img  src="https://bread-and-code.github.io/images/projects/easytoken.png">
 </p>
 
 # easytoken
@@ -42,7 +45,7 @@ $ python3 -m pip install easytoken
 For upgrade:
 ```
 $ python3 -m pip install --upgrade easytoken
-
+```
 After Download the module ,:
 ```
 $ python
