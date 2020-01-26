@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: easytoken
-Version: 1.0.7
+Version: 1.0.8
 Summary: easytoken is an independent Open Source, Natural Language Processing python library which implements a easytoken to create token from Both Sentence and Paragraph.
 Home-page: https://github.com/sayanmondal2098/easytoken
 Author: Sayan Mondal(ph3n1x)
@@ -10,7 +10,8 @@ Download-URL: https://github.com/sayanmondal2098/easytoken
 Description: # easytoken
         [![Gitter](https://badges.gitter.im/BreadandCode/community.svg)](https://gitter.im/BreadandCode/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
         [![CircleCI](https://circleci.com/gh/sayanmondal2098/easytoken.svg?style=svg)](https://circleci.com/gh/sayanmondal2098/easytoken)
-        
+        [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/sayanmondal2098/easytoken/fork)
+        [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
         
          <p align="center">
           <img  src="https://bread-and-code.github.io/images/projects/easytoken.png">
@@ -80,6 +81,7 @@ Description: # easytoken
                   'string'
         
         # LISCENSE:
+        ```
         MIT License
         
         Copyright (c) 2020 Sayan Mondal | Bread-and-Code
@@ -101,7 +103,7 @@ Description: # easytoken
         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
         SOFTWARE.
-        
+        ```
         
         
 Keywords: NLP,Natural Language Processing,Tokenization,Text Summarization,Text Processing,Sentiment Analysis
