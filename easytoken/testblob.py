@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 """Wrappers for various units of text, including the main
 :class:`TextBlob <textblob.blob.TextBlob>`, :class:`Word <textblob.blob.Word>`,
@@ -81,6 +82,44 @@ class Word(unicode):
     def __str__(self):
         return self.string
 
+    def singularize(self):
+        """Return the singular version of the word as a string."""
+        return Word(_singularize(self.string))
+
+    def pluralize(self):
+        '''Return the plural version of the word as a string.'''
+        return Word(_pluralize(self.string))
+
+    def translate(self, from_lang='auto', to="en"):
+        '''Translate the word to another language using Google's
+        Translate API.
+        .. versionadded:: 0.5.0
+        '''
+        return self.translator.translate(self.string,
+                                         from_lang=from_lang, to_lang=to)
+
+    def detect_language(self):
+        '''Detect the word's language using Google's Translate API.
+        .. versionadded:: 0.5.0
+        '''
+        return self.translator.detect(self.string)
+
+    def spellcheck(self):
+        '''Return a list of (word, confidence) tuples of spelling corrections.
+        Based on: Peter Norvig, "How to Write a Spelling Corrector"
+        (http://norvig.com/spell-correct.html) as implemented in the pattern
+        library.
+        .. versionadded:: 0.6.0
+        '''
+        return suggest(self.string)
+
+    def correct(self):
+        '''Correct the spelling of the word. Returns the word with the highest
+        confidence using the spelling corrector.
+        .. versionadded:: 0.6.0
+        '''
+        return Word(self.spellcheck()[0][0])
+
     @cached_property
     @requires_nltk_corpus
     def lemma(self):
@@ -117,6 +156,14 @@ class Word(unicode):
         return stemmer.stem(self.string)
 
     @cached_property
+    def synsets(self):
+        """The list of Synset objects for this Word.
+        :rtype: list of Synsets
+        .. versionadded:: 0.7.0
+        """
+        return self.get_synsets(pos=None)
+
+    @cached_property
     def definitions(self):
         """The list of definitions for this word. Each definition corresponds
         to a synset.
@@ -143,6 +190,8 @@ class Word(unicode):
         """
         return [syn.definition() for syn in self.get_synsets(pos=pos)]
 
+
+class WordList(list):
     """A list-like collection of words."""
 
     def __init__(self, collection):
@@ -206,6 +255,22 @@ class Word(unicode):
         """
         for e in iterable:
             self.append(e)
+
+    def upper(self):
+        """Return a new WordList with each word upper-cased."""
+        return self.__class__([word.upper() for word in self])
+
+    def lower(self):
+        """Return a new WordList with each word lower-cased."""
+        return self.__class__([word.lower() for word in self])
+
+    def singularize(self):
+        """Return the single version of each word in this WordList."""
+        return self.__class__([word.singularize() for word in self])
+
+    def pluralize(self):
+        """Return the plural version of each word in this WordList."""
+        return self.__class__([word.pluralize() for word in self])
 
     def lemmatize(self):
         """Return the lemma of each word in this WordList."""
@@ -330,6 +395,42 @@ class BaseBlob(StringlikeMixin, BlobComparableMixin):
             raise NameError("This blob has no classifier. Train one first!")
         return self.classifier.classify(self.raw)
 
+    @cached_property
+    def sentiment(self):
+        """Return a tuple of form (polarity, subjectivity ) where polarity
+        is a float within the range [-1.0, 1.0] and subjectivity is a float
+        within the range [0.0, 1.0] where 0.0 is very objective and 1.0 is
+        very subjective.
+        :rtype: namedtuple of the form ``Sentiment(polarity, subjectivity)``
+        """
+        return self.analyzer.analyze(self.raw)
+
+    @cached_property
+    def sentiment_assessments(self):
+        """Return a tuple of form (polarity, subjectivity, assessments ) where
+        polarity is a float within the range [-1.0, 1.0], subjectivity is a
+        float within the range [0.0, 1.0] where 0.0 is very objective and 1.0
+        is very subjective, and assessments is a list of polarity and
+        subjectivity scores for the assessed tokens.
+        :rtype: namedtuple of the form ``Sentiment(polarity, subjectivity,
+        assessments)``
+        """
+        return self.analyzer.analyze(self.raw, keep_assessments=True)
+
+    @cached_property
+    def polarity(self):
+        """Return the polarity score as a float within the range [-1.0, 1.0]
+        :rtype: float
+        """
+        return PatternAnalyzer().analyze(self.raw)[0]
+
+    @cached_property
+    def subjectivity(self):
+        """Return the subjectivity score as a float within the range [0.0, 1.0]
+        where 0.0 is very objective and 1.0 is very subjective.
+        :rtype: float
+        """
+        return PatternAnalyzer().analyze(self.raw)[1]
 
     @cached_property
     def noun_phrases(self):
