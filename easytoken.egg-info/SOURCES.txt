@@ -3,6 +3,8 @@ setup.py
 easytoken/__init__.py
 easytoken/blob.py
 easytoken/easytoken.py
+easytoken/mixing.py
+easytoken/testblob.py
 easytoken/utils.py
 easytoken.egg-info/PKG-INFO
 easytoken.egg-info/SOURCES.txt
