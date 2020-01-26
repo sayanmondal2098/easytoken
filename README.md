@@ -1,18 +1,19 @@
 # easytoken
 [![Gitter](https://badges.gitter.im/BreadandCode/community.svg)](https://gitter.im/BreadandCode/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![CircleCI](https://circleci.com/gh/sayanmondal2098/easytoken.svg?style=svg)](https://circleci.com/gh/sayanmondal2098/easytoken)
-
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/sayanmondal2098/easytoken/fork)
+[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
  <p align="center">
   <img  src="https://bread-and-code.github.io/images/projects/easytoken.png">
 </p>
 
 # easytoken
-easytoken is an independent Open Source, Natural Language Processing python library which implements a easytoken to create token from Both Sentence and Paragraph.<br>
+easytoken is an independent Open Source, Natural Language Processing python library which implements a easytoken to create token from Both Sentence and Paragraph. It will also return the POS of the corresponding token .<br>
 <br>
 
 # Next in Line:
-This is still in alpha stage so we are planning to add few more feature as tagging and cleaning which will be added by 2020. We are also developing a other Language Processing algorithm for our library.
+This is still in alpha stage so we are planning to add few more feature as  cleaning which will be added by 2020. We are also developing a other Language Processing algorithm for our library.
 
 # Naming:
 The name is just it's purpose \_(^_^)_/
@@ -54,7 +55,9 @@ $ python
 Implementation:
 ```python
 >>> from easytoken.easytoken import Wordeasytoken
+>>> from easytoken.blob import Partsofspeech
 >>>Wordeasytoken.tokenize(Wordeasytoken,text="Hello all , I'll be a good lover for you.")
+>>> print   (Partsofspeech.pos("Hello all , I'll be in love with you."))
 ```
   
 # Developer Info:
@@ -71,6 +74,7 @@ Team: Bread and Code
           'string'
 
 # LISCENSE:
+```
 MIT License
 
 Copyright (c) 2020 Sayan Mondal | Bread-and-Code
@@ -92,5 +96,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
+```
 
